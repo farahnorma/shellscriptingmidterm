@@ -1,6 +1,10 @@
 #!/bin/bash
 
 
+function listing(){
+ls *txt
+}
+
 
 function find_metadata() {
 touch metadata.txt
@@ -13,7 +17,7 @@ curl -w "\n" http://169.254.169.254/latest/meta-data/public-hostname>>metadata.t
 
 
 function version_number() {
-echo "1.0"
+echo "2.0"
 }
 
 
@@ -23,10 +27,14 @@ sudo yum update -y
 
 
 function wrong() {
-echo "script name: midterm; valid arguments '-m, --metadata, -v, --version, or no argument'"
+echo "script name: midterm; valid arguments '-l, --list, -m, --metadata, -v, --version, or no argument'"
 
 }
+
 case $1 in
+	-l|--list)
+		listing
+		;;
 	-m|--metadata)
 		find_metadata
 		;;
