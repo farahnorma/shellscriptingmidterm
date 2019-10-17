@@ -1,0 +1,5 @@
+ami-0b69ea66ff7391e80
+i-0ed4cc507d6266847
+ip-172-31-81-173.ec2.internal
+midterm
+ec2-18-212-55-150.compute-1.amazonaws.com
