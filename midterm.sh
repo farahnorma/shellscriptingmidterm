@@ -3,6 +3,7 @@
 
 function listing(){
 ls *txt
+
 }
 
 
